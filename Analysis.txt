@@ -19,3 +19,13 @@ Alarm, stopwatch, and countdown timer
 Sync with internet time servers
 
 Power source: battery, plug-in, rechargeable
+
+Design Specifications
+
+Screen size and shape
+
+Color scheme and themes
+
+Font style and size
+
+Touchscreen or physical interface
