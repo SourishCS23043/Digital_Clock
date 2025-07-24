@@ -5,3 +5,17 @@ Intended use: home, office, school, mobile app, industrial
 Type: hardware, software, or both
 
 Design focus: functional, decorative, branded
+
+Core Features
+
+Time format: 12-hour / 24-hour / toggle option
+
+Display elements: seconds, date, day of week
+
+Time zone support
+
+Alarm, stopwatch, and countdown timer
+
+Sync with internet time servers
+
+Power source: battery, plug-in, rechargeable
