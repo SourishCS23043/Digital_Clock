@@ -29,3 +29,13 @@ Color scheme and themes
 Font style and size
 
 Touchscreen or physical interface
+
+Platform Compatibility
+
+Android app
+
+iOS app
+
+Web application
+
+Physical embedded system
