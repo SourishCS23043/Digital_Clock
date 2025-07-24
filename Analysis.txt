@@ -47,3 +47,11 @@ Sync with calendar apps (Google Calendar, Outlook)
 Smart home integration (e.g. lights, thermostat)
 
 Voice assistant support (Google Assistant, Alexa)
+
+User Profiles & Settings
+
+Multi-user access with profiles
+
+Personalized display preferences
+
+Cloud or local data storage
