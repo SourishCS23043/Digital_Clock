@@ -39,3 +39,11 @@ iOS app
 Web application
 
 Physical embedded system
+
+Integrations
+
+Sync with calendar apps (Google Calendar, Outlook)
+
+Smart home integration (e.g. lights, thermostat)
+
+Voice assistant support (Google Assistant, Alexa)
