@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Note: The image shows 100νής which is likely a typo for 100vh */
+    background: #080a1f; /* Note: The image shows #080aif which is likely a typo for #080a1f or similar dark color hex code */
+}
+
+#clock h2 {
+    position: relative;
+    display: block;
+    color: #111;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em; /* Note: The image shows 0.400 which is likely a typo for 0.4em */
+    font-size: 0.8em; /* Note: The image shows 0.em which is likely a typo for 0.8em or similar */
+}
+
+
+
+#clock #time {
+    display: flex;
+}
+
+#clock #time div {
+    position: relative;
+    margin-top: -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+}
+
+#clock #time div span {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #2196F3; /* This appears to be the corrected color from the image which looks like blue */
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 100;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
