@@ -1,21 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clock</title>
 <style>
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-}
+  }
 
-body {
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Note: The image shows 100νής which is likely a typo for 100vh */
-    background: #080a1f; /* Note: The image shows #080aif which is likely a typo for #080a1f or similar dark color hex code */
-}
+    min-height: 100vh;
+    background: #080a1f;
+  }
 
-#clock h2 {
+  #clock h2 {
     position: relative;
     display: block;
     color: #111;
@@ -23,28 +28,26 @@ body {
     margin: 10px 0;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.4em; /* Note: The image shows 0.400 which is likely a typo for 0.4em */
-    font-size: 0.8em; /* Note: The image shows 0.em which is likely a typo for 0.8em or similar */
-}
+    letter-spacing: 0.4em;
+    font-size: 0.8em;
+  }
 
-
-
-#clock #time {
+  #clock #time {
     display: flex;
-}
+    gap: 10px;
+  }
 
-#clock #time div {
+  #clock #time div {
     position: relative;
-    margin-top: 0 5px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
-}
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  }
 
-#clock #time div span {
-    position: relative;
+  #clock #time div span:first-child {
     display: block;
     width: 100px;
     height: 80px;
-    background: #2196F3; /* This appears to be the corrected color from the image which looks like blue */
+    background: #2196F3;
     color: #fff;
     font-weight: 300;
     display: flex;
@@ -52,17 +55,95 @@ body {
     align-items: center;
     font-size: 3em;
     z-index: 100;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
-}
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
 
+  #clock #time div span:last-child {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  /* Your new styles */
+
+  #clock #time div:nth-child(2) {
+    height: 30px;
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    z-index: 1;
+    box-shadow: none;
+    background: #127106;
+    text-transform: uppercase;
+  }
+
+  #clock #time div:nth-child(2) span {
+    background: #110000;
+  }
+
+  #clock #time div:last-child span:nth-child(1) {
+    background: #ec0062;
+  }
+
+  #clock #time div:last-child span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    background: #111;
+    color: #000;
+    -webkit-box-reflect: below linear-gradient(transparent, #0000);
+  }
 </style>
-<div id="clock">
+<script>
+  function clock() {
+}
+var hours = document.getElementById('hour');
+var minutes = document.getElementById('minutes');
+var seconds = document.getElementById('seconds');
+var ampm = document.getElementById('ampm');
+var h = new Date().getHours();
+var m = new Date().getMinutes();
+vars=new Date().getSeconds();
+var am = "AM";
+if (h>12) {
+h=h-12;
+var am = "PM"
+}
+h = (h<10)? "0" + h:h;
+m = (m < 10) ? "0" + m: m;
+s = (s<10)? "0" + s:s;
+hours.innerHTML = h;
+minutes.innerHTML = m;
+seconds.innerHTML = s;
+ampm.innerHTML = am;
+var interval = setInterval(clock, 1000);
+
+</script>
+</head>
+<body>
+  <div id="clock">
     <h2>The time is now</h2>
     <div id="time">
-        <div><span id="hour">00</span><span>Hours</span></div>
-        <div><span id="minutes">00</span><span>Minutes</span></div>
-        <div><span id="seconds">00</span><span>Seconds</span></div>
-        <div><span id="ampm"></span></div>
+      <div>
+        <span id="hour">00</span>
+        <span>Hours</span>
+      </div>
+      <div>
+        <span id="minutes">00</span>
+        <span>Minutes</span>
+      </div>
+      <div>
+        <span id="seconds">00</span>
+        <span>Seconds</span>
+      </div>
+      <div>
+        <span id="ampm"></span>
+      </div>
     </div>
-</div>
+  </div>
+</body>
 </html>
